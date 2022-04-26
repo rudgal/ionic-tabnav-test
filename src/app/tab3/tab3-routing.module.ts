@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: Tab3Page,
+  },
+  {
+    path: 'tab3-sub',
+    loadChildren: () => import('./tab3-sub/tab3-sub.module').then( m => m.Tab3SubPageModule)
   }
 ];
 

@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <app-explore-container name="Tab3 Sub-Page Param: {{ someParam }}"></app-explore-container>
+
+
+  <ion-button (click)="close()" fill="outline" style="margin-left: auto">
+    <ion-icon name="close-outline"></ion-icon>
+  </ion-button>
+
+  <br/>
+  <br/>
+  <p>simplified example of a page that serves some content related to Tab3 based on the given url parameter</p>
+  <p>Intended behaviour of the close button is, to return to the previous page where to user came from (independent
+    wheter it's Tab1,2 or 3) and to remove this page from the view-stack</p>
+
+
+</ion-content>
